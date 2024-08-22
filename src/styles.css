@@ -225,7 +225,7 @@ footer {
 
 video#hero-video {
   background: black;
-  max-width: 800px;
+  max-width: 100px;
   position: relative;
   max-width: 100%;
   z-index: -10;
