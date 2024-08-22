@@ -5,10 +5,19 @@
 :root {
   --background-color: #0b0b0e;
   --text-color: #ffffff;
-  --gamba-ui-primary-color: #9564ff;  --gamba-ui-button-main-background: url('https://ipfs.io/ipfs/QmT1VbYfoVPNtfGmmH1mMpfK4qbzsEefVgWDkVHzSbbd53?filename=stuffdoe_Create_a_hyper-realistic_4K_image_of_a_a_gold_casino.__3f289b7c-fc66-4c97-b762-e6a1085111bd.png');  --gamba-ui-border-radius: 10px;
+  --gamba-ui-primary-color: #9564ff;
+
+  --gamba-ui-border-radius: 10px;
+
   --gamba-ui-button-default-background: #0e0e16;
   --gamba-ui-button-default-background-hover: #11111d;
-  --gamba-ui-button-default-color: white;  --gamba-ui-button-main-color: white;  --gamba-ui-button-main-background-hover: #9564ff;
+  --gamba-ui-button-default-color: white;
+
+  --gamba-ui-button-main-background: url('https://ipfs.io/ipfs/QmT1VbYfoVPNtfGmmH1mMpfK4qbzsEefVgWDkVHzSbbd53?filename=stuffdoe_Create_a_hyper-realistic_4K_image_of_a_a_gold_casino.__3f289b7c-fc66-4c97-b762-e6a1085111bd.png');
+  --gamba-ui-button-main-background: #8851ff00;
+  --gamba-ui-button-main-color: #ffffff;
+  --gamba-ui-button-main-background-hover: #9564ff;
+
   --gamba-ui-input-background: #0e0e16;
   --gamba-ui-input-color: #ffffff;
   --gamba-ui-input-background-hover: #11111d;
@@ -23,7 +32,8 @@ h1, h2 {
   margin: 0;
 }
 
-body {  background: var(--gamba-ui-button-main-background);
+body {
+  background: var(--background-color);
   color: var(--text-color);
   cursor: default;
   margin: 0;
@@ -41,4 +51,14 @@ body::-webkit-scrollbar {
   width: 4px;
 }
 
-body::-webkit-scrollbar-thumb {  background-color: var(--gamba-ui-primary-color);
+body::-webkit-scrollbar-thumb {
+  background-color: var(--gamba-ui-primary-color);
+}
+
+.wallet-adapter-button.wallet-adapter-button-trigger {
+  height: 40px;
+  line-height: 40px;
+  font-weight: normal;
+  background: rgb(55, 57, 82);
+  border-radius: 10px;
+}
