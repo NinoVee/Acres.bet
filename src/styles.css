@@ -2,26 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --background-color: GREEN;
-  --text-color: #ffffff;
-  --gamba-ui-primary-color: #9564ff;
-
-  --gamba-ui-border-radius: 10px;
-
-  --gamba-ui-button-default-background: GREEN;
-  --gamba-ui-button-default-background-hover: #11111d;
-  --gamba-ui-button-default-color: white;
-
-  --gamba-ui-button-main-background: #8851ff;
-  --gamba-ui-button-main-color: white;
-  --gamba-ui-button-main-background-hover: #9564ff;
-
-  --gamba-ui-input-background: GREEN;
-  --gamba-ui-input-color: #ffffff;
-  --gamba-ui-input-background-hover: #11111d;
-}
-
 body, input, button, textarea, pre {
   font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
