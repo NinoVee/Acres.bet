@@ -74,7 +74,7 @@ export function WelcomeBanner() {
   return (
     <CasinoContainer>
       <WelcomeBox>
-        <h1>Welcome to Acres.Bet! 🎰</h1>
+        <h1>Welcome to Acres.Bet 🎰</h1>
         <p>Your ultimate online casino experience on the Solana blockchain.</p>
         <CasinoButton onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
           🚀 Add Liquidity
