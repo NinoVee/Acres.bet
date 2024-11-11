@@ -1,122 +1,91 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Buttons = styled.div`
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-
-  @media (min-width: 800px) {
-    height: 100%;
-  }
-
-  @media (max-width: 800px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 0!important;
-  }
-
-  & > button {
-    border: none;
-    width: 100%;
-    border-radius: 10px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.3);
-    transition: background 0.3s ease, transform 0.3s ease;
-    color: #000;
-    font-size: 1.1rem;
-    font-family: 'Luckiest Guy', cursive;
-    cursor: pointer;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 16px rgba(255, 0, 0, 0.8);
-    &:hover {
-      background: rgba(255, 255, 255, 0.8);
-      transform: scale(1.05);
-    }
-  }
-`;
-
-const Welcome = styled.div`
-  @keyframes welcome-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes backgroundGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
-  background-size: 300% 300%;
-  animation: welcome-fade-in 0.5s ease, backgroundGradient 20s ease infinite;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
+// Main container for the casino-style background and layout
+const CasinoContainer = styled.div`
+  background: url('https://example.com/vegas-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
-  filter: drop-shadow(0 8px 6px rgba(0,0,0,0.1)) drop-shadow(0 4px 4px rgba(0,0,0,0.1));
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+`;
 
-  & > div {
-    text-align: center;
-    color: #FFF;
-    font-family: 'Neon Lights', cursive;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.5);
+// Welcome box with transparent background and neon effects
+const WelcomeBox = styled.div`
+  background: rgba(0, 0, 0, 0.7); /* Transparent background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.5), 0 0 30px rgba(57, 255, 20, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  animation: neonGlow 2s ease-in-out infinite alternate;
+
+  @keyframes neonGlow {
+    0% {
+      box-shadow: 0 0 10px rgba(57, 255, 20, 0.3), 0 0 20px rgba(57, 255, 20, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(57, 255, 20, 0.6), 0 0 30px rgba(57, 255, 20, 0.7);
+    }
   }
 
   & h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    color: #FFF;
+    font-size: 3rem;
+    color: #39ff14;
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.6);
+    font-family: 'Lobster', cursive;
+    margin-bottom: 15px;
   }
 
   & p {
     font-size: 1.2rem;
-  }
-
-  @media (min-width: 800px) {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 0;
-    & > div {
-      padding: 40px;
-    }
+    color: #ffffff;
+    margin: 10px 0;
   }
 `;
 
+// Styled buttons with neon glow and hover effects
+const CasinoButton = styled.button`
+  background: rgba(0, 0, 0, 0.8);
+  color: #39ff14;
+  font-family: 'Luckiest Guy', sans-serif;
+  border: 2px solid #39ff14;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 5px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.4);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.8), 0 0 30px rgba(57, 255, 20, 0.5);
+  }
+`;
+
+// Main welcome component that wraps text and buttons
 export function WelcomeBanner() {
   return (
-    <Welcome>
-      <div>
-        <h1>Welcome to Acres.bet 💎</h1>
-        <p>A fair, simple and decentralized casino on Solana.</p>
-      </div>
-      <Buttons>
-        <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
+    <CasinoContainer>
+      <WelcomeBox>
+        <h1>Welcome to Neon Vegas! 💎</h1>
+        <p>Your ultimate online casino experience on the Solana blockchain.</p>
+        <CasinoButton onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
           🚀 Add Liquidity
-        </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
-        </button>
-      </Buttons>
-    </Welcome>
+        </CasinoButton>
+        <CasinoButton onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
+          👨‍💻 Build Your Own
+        </CasinoButton>
+        <CasinoButton onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
+          💬 Join Discord
+        </CasinoButton>
+      </WelcomeBox>
+    </CasinoContainer>
   );
 }
