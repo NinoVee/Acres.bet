@@ -5,20 +5,23 @@
 :root {
   --background-color: #0b0b0e;
   --text-color: #ffffff;
-  --gamba-ui-primary-color: #9564ff;
-
+  --neon-green: #39ff14;
+  --button-hover-glow: 0 0 10px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.6);
+  --button-default-glow: 0 0 8px rgba(57, 255, 20, 0.4), 0 0 12px rgba(57, 255, 20, 0.3);
   --gamba-ui-border-radius: 10px;
+
+  --gamba-ui-primary-color: var(--neon-green);
 
   --gamba-ui-button-default-background: #0e0e16;
   --gamba-ui-button-default-background-hover: #11111d;
-  --gamba-ui-button-default-color: white;
+  --gamba-ui-button-default-color: var(--neon-green);
 
-  --gamba-ui-button-main-background: #8851ff;
-  --gamba-ui-button-main-color: white;
-  --gamba-ui-button-main-background-hover: #9564ff;
+  --gamba-ui-button-main-background: #0e0e16;
+  --gamba-ui-button-main-color: var(--neon-green);
+  --gamba-ui-button-main-background-hover: #11111d;
 
   --gamba-ui-input-background: #0e0e16;
-  --gamba-ui-input-color: #ffffff;
+  --gamba-ui-input-color: var(--text-color);
   --gamba-ui-input-background-hover: #11111d;
 }
 
@@ -32,23 +35,75 @@ h1, h2 {
 }
 
 body {
-  background: var(--background-color);
+  background: url('https://example.com/vegas-background.jpg') no-repeat center center fixed; /* Use a URL to a Las Vegas-style background */
+  background-size: cover;
   color: var(--text-color);
   cursor: default;
   margin: 0;
   overflow-y: scroll;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(57, 255, 20, 0.5));
+}
+
+button {
+  background: var(--gamba-ui-button-default-background);
+  color: var(--gamba-ui-button-default-color);
+  border: none;
+  border-radius: var(--gamba-ui-border-radius);
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--button-default-glow);
+}
+
+button:hover {
+  background: var(--gamba-ui-button-default-background-hover);
+  box-shadow: var(--button-hover-glow);
+}
+
+.gamba-ui-main-button {
+  background: var(--gamba-ui-button-main-background);
+  color: var(--gamba-ui-button-main-color);
+}
+
+.gamba-ui-main-button:hover {
+  background: var(--gamba-ui-button-main-background-hover);
+  box-shadow: var(--button-hover-glow);
+}
+
+input, textarea {
+  background: var(--gamba-ui-input-background);
+  color: var(--gamba-ui-input-color);
+  border: 1px solid var(--neon-green);
+  border-radius: var(--gamba-ui-border-radius);
+  padding: 8px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:hover, textarea:hover {
+  background: var(--gamba-ui-input-background-hover);
 }
 
 a {
-  color: inherit;
+  color: var(--neon-green);
   text-decoration: none;
+  transition: text-shadow 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.8);
 }
 
 body::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--gamba-ui-primary-color);
+  background-color: var(--neon-green);
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(57, 255, 20, 0.5);
+}
