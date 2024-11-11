@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -25,16 +25,20 @@ const Buttons = styled.div`
     border: none;
     width: 100%;
     border-radius: 10px;
-    padding: 10px;
-    background: #ffffffdf;
-    transition: background .2s ease;
-    color: black;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease;
+    color: #000;
+    font-size: 1.1rem;
+    font-family: 'Luckiest Guy', cursive;
     cursor: pointer;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 16px rgba(255, 0, 0, 0.8);
     &:hover {
-      background: white;
+      background: rgba(255, 255, 255, 0.8);
+      transform: scale(1.05);
     }
   }
-`
+`;
 
 const Welcome = styled.div`
   @keyframes welcome-fade-in {
@@ -60,8 +64,8 @@ const Welcome = styled.div`
 
   background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
   background-size: 300% 300%;
-  animation: welcome-fade-in .5s ease, backgroundGradient 30s ease infinite;
-  border-radius: 10px;
+  animation: welcome-fade-in 0.5s ease, backgroundGradient 20s ease infinite;
+  border-radius: 15px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -69,23 +73,23 @@ const Welcome = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 20px;
-  filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
-
-  & img {
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    right: 0;
-    &:nth-child(1) {animation-delay: 0s;}
-    &:nth-child(2) {animation-delay: 1s;}
-  }
+  filter: drop-shadow(0 8px 6px rgba(0,0,0,0.1)) drop-shadow(0 4px 4px rgba(0,0,0,0.1));
 
   & > div {
-    padding: 0px;
-    filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
+    text-align: center;
+    color: #FFF;
+    font-family: 'Neon Lights', cursive;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.5);
+  }
+
+  & h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #FFF;
+  }
+
+  & p {
+    font-size: 1.2rem;
   }
 
   @media (min-width: 800px) {
@@ -96,16 +100,14 @@ const Welcome = styled.div`
       padding: 40px;
     }
   }
-`
+`;
 
 export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
         <h1>Welcome to Acres.bet 💎</h1>
-        <p>
-          A fair, simple and decentralized casino on Solana.
-        </p>
+        <p>A fair, simple and decentralized casino on Solana.</p>
       </div>
       <Buttons>
         <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
@@ -119,5 +121,5 @@ export function WelcomeBanner() {
         </button>
       </Buttons>
     </Welcome>
-  )
+  );
 }
