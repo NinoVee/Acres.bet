@@ -11,7 +11,7 @@ const CasinoContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Times New Roman', Times, serif; /* Updated font */
   text-align: center;
 `;
 
@@ -38,7 +38,7 @@ const WelcomeBox = styled.div`
     font-size: 3rem;
     color: #39ff14;
     text-shadow: 0 0 8px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.6);
-    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif; /* Updated font */
     margin-bottom: 15px;
   }
 
@@ -46,6 +46,7 @@ const WelcomeBox = styled.div`
     font-size: 1.2rem;
     color: #ffffff;
     margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif; /* Updated font */
   }
 `;
 
@@ -53,7 +54,7 @@ const WelcomeBox = styled.div`
 const CasinoButton = styled.button`
   background: rgba(0, 0, 0, 0.8);
   color: #39ff14;
-  font-family: 'Luckiest Guy', sans-serif;
+  font-family: 'Times New Roman', Times, serif; /* Updated font */
   border: 2px solid #39ff14;
   border-radius: 10px;
   padding: 10px 20px;
@@ -68,6 +69,7 @@ const CasinoButton = styled.button`
     box-shadow: 0 0 20px rgba(57, 255, 20, 0.8), 0 0 30px rgba(57, 255, 20, 0.5);
   }
 `;
+
 
 // Main welcome component that wraps text and buttons
 export function WelcomeBanner() {
