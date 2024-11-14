@@ -51,7 +51,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 428px) {
   body {
     background-size: 100% auto;
     background-position: center top;
