@@ -79,7 +79,7 @@ export function WelcomeBanner() {
         <CasinoButton onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
           🚀 Add Liquidity
         </CasinoButton>
-        <CasinoButton onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
+        <CasinoButton onClick={() => window.open('https://discord.gg/rJaZUfryDx', '_blank')}>
           💬 Join Discord
         </CasinoButton>
       </WelcomeBox>
