@@ -46,6 +46,22 @@ body {
   filter: drop-shadow(0 0 10px rgba(57, 255, 20, 0.5));
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Prevents issues with fixed backgrounds on mobile */
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 100% auto; /* Ensures background fits smaller screens */
+    background-position: center top;
+  }
+}
+
 button {
   background: var(--gamba-ui-button-default-background);
   color: var(--gamba-ui-button-default-color);
