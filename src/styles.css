@@ -23,7 +23,7 @@
 }
 
 body, input, button, textarea, pre {
-  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
 }
 
@@ -32,7 +32,7 @@ h1, h2 {
 }
 
 body {
-  background: black url('https://i.postimg.cc/v8gWShWQ/stuffdoe-Create-a-hyper-realistic-4-K-image-of-a-gold-slot-mac-85a8b6d4-f411-4c56-9378-87ddb0dc9cd0-0.png') no-repeat center center; /* Use a URL to a Las Vegas-style background */
+  background: black url('https://i.postimg.cc/v8gWShWQ/stuffdoe-Create-a-hyper-realistic-4-K-image-of-a-gold-slot-mac-85a8b6d4-f411-4c56-9378-87ddb0dc9cd0-0.png') no-repeat center center scroll; /* Changed attachment from fixed to scroll */
   background-size: cover;
   color: var(--text-color);
   cursor: default;
@@ -51,7 +51,7 @@ body {
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 480px) {
   body {
     background-size: 100% auto;
     background-position: center top;
