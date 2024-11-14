@@ -1,4 +1,3 @@
-/* Global styles */
 * {
   box-sizing: border-box;
 }
@@ -10,13 +9,17 @@
   --button-hover-glow: 0 0 10px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.6);
   --button-default-glow: 0 0 8px rgba(57, 255, 20, 0.4), 0 0 12px rgba(57, 255, 20, 0.3);
   --gamba-ui-border-radius: 10px;
+
   --gamba-ui-primary-color: var(--neon-green);
+
   --gamba-ui-button-default-background: #0e0e16;
   --gamba-ui-button-default-background-hover: #11111d;
   --gamba-ui-button-default-color: var(--neon-green);
+
   --gamba-ui-button-main-background: #0e0e16;
   --gamba-ui-button-main-color: var(--neon-green);
   --gamba-ui-button-main-background-hover: #11111d;
+
   --gamba-ui-input-background: #0e0e16;
   --gamba-ui-input-color: var(--text-color);
   --gamba-ui-input-background-hover: #11111d;
@@ -32,7 +35,7 @@ h1, h2 {
 }
 
 body {
-  background: black url('https://i.postimg.cc/v8gWShWQ/stuffdoe-Create-a-hyper-realistic-4-K-image-of-a-gold-slot-mac-85a8b6d4-f411-4c56-9378-87ddb0dc9cd0-0.png') no-repeat center center scroll; /* Changed attachment from fixed to scroll */
+  background: url('https://i.postimg.cc/v8gWShWQ/stuffdoe-Create-a-hyper-realistic-4-K-image-of-a-gold-slot-mac-85a8b6d4-f411-4c56-9378-87ddb0dc9cd0-0.png') no-repeat center center fixed; /* Use a URL to a Las Vegas-style background */
   background-size: cover;
   color: var(--text-color);
   cursor: default;
@@ -44,17 +47,18 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   body {
+    background-attachment: scroll; /* Prevents issues with fixed backgrounds on mobile */
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
   }
 }
 
 @media (max-width: 480px) {
   body {
-    background-size: 100% auto;
-    background-position: center center;
+    background-size: 100% auto; /* Ensures background fits smaller screens */
+    background-position: center top;
   }
 }
 
@@ -110,7 +114,6 @@ a:hover {
   text-shadow: 0 0 8px rgba(57, 255, 20, 0.8);
 }
 
-/* Scrollbar styling */
 body::-webkit-scrollbar {
   width: 6px;
 }
@@ -120,3 +123,4 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: 0 0 6px rgba(57, 255, 20, 0.5);
 }
+
