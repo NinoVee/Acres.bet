@@ -84,7 +84,7 @@ export function WelcomeBanner() {
         <CasinoButton onClick={() => window.open('https://discord.gg/rJaZUfryDx', '_blank')}>
           💬 Join Discord
         </CasinoButton>
-        <CasinoButton onClick={() => window.open('https://discord.gg/rJaZUfryDx', '_blank')}>
+        <CasinoButton onClick={() => window.open('https://jup.ag/swap/SOL-9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe', '_blank')}>
           💰 Buy $Acres
         </CasinoButton>
       </WelcomeBox>
