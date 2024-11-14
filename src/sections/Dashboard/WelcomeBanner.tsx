@@ -38,7 +38,7 @@ const WelcomeBox = styled.div`
     font-size: 3rem;
     color: #39ff14;
     text-shadow: 0 0 8px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.6);
-    font-family: 'Lobster', cursive;
+    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-bottom: 15px;
   }
 
