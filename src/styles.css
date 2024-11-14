@@ -44,17 +44,17 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   body {
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
   }
 }
 
 @media (max-width: 480px) {
   body {
     background-size: 100% auto;
-    background-position: center;
+    background-position: center center;
   }
 }
 
