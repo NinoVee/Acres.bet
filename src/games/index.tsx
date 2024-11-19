@@ -29,7 +29,7 @@ export const GAMES: GameBundle[] = [
     meta: {
       background: '#5465ff',
       name: 'Slots',
-      image: '/games/slots.png',
+      image: '/games/SLOTS1.png',
       description: `
         Slots is the quintessential game of luck and anticipation. Spin the reels and match symbols to win, with potential rewards displayed upfront. A fair and exciting game, Slots offers a classic casino experience tailored for digital enjoyment.
       `,
@@ -43,7 +43,7 @@ export const GAMES: GameBundle[] = [
       description: `
         Flip offers a straightforward yet thrilling gamble: choose Heads or Tails and double your money or lose it all. This simple, high-stakes game tests your luck and decision-making with every flip of the coin.
       `,
-      image: '/games/flip.png',
+      image: '/games/FLIP1.png',
       background: '#ffe694',
     },
     app: React.lazy(() => import('./Flip')),
