@@ -68,7 +68,7 @@ export const GAMES: GameBundle[] = [
       description: `
         There's money hidden beneath the squares. The reward will increase the more squares you reveal, but watch out for the 5 hidden mines. Touch one and you'll go broke. You can cash out at any time.
       `,
-      image: '/games/mines.png',
+      image: '/games/MINES1.png',
       background: '#8376ff',
     },
     app: React.lazy(() => import('./Mines')),
