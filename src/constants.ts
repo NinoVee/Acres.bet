@@ -51,8 +51,8 @@ export const DEFAULT_POOL = POOLS[0]
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
     mint: FAKE_TOKEN_MINT,
-    name: 'ACRES',
-    symbol: 'ACRES',
+    name: 'TEST ACRES',
+    symbol: ' TEST ACRES',
     image: '/fakemoney.png',
     baseWager: 1e9,
     decimals: 9,
@@ -60,8 +60,8 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   },
   {
     mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
-    name: 'W',
-    symbol: 'Wormhole',
+    name: 'ACRES',
+    symbol: 'ACRES',
     image: 'https://wormhole.com/token.png',
     baseWager: 1e6,
     decimals: 6,
