@@ -68,7 +68,7 @@ export const GAMES: GameBundle[] = [
       description: `
         There's money hidden beneath the squares. The reward will increase the more squares you reveal, but watch out for the 5 hidden mines. Touch one and you'll go broke. You can cash out at any time.
       `,
-      image: '/games/MINES1.png',
+      image: '/games/mines.png',
       background: '#8376ff',
     },
     app: React.lazy(() => import('./Mines')),
@@ -77,7 +77,7 @@ export const GAMES: GameBundle[] = [
     id: 'roulette',
     meta: {
       name: 'Roulette',
-      image: '/games/roulette.png',
+      image: '/games/ROULETTE1.png',
       description: `
         Roulette brings the classic wheel-spinning game to life with a digital twist. Bet on where the ball will land and watch as the wheel decides your fate. With straightforward rules and the chance for big wins, Roulette is a timeless game of chance.
       `,
