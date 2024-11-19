@@ -11,7 +11,7 @@ import IMAGE_5X from './assets/slot-5x.png'
 import IMAGE_COOL from './assets/slot-emoji-cool.png'
 import IMAGE_HEARTS from './assets/slot-emoji-hearts.png'
 import IMAGE_UNICORN from './assets/slot-unicorn.png'
-import IMAGE_WOJAK from './assets/slot-wojak.png'
+import IMAGE_WOJAK from './assets/MLK COIN.png'
 
 export interface SlotItem {
   multiplier: number
