@@ -62,7 +62,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
     name: 'ACRES',
     symbol: 'ACRES',
-    image: 'https://wormhole.com/token.png',
+    image: '/MLK LOGO.JPG',
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
