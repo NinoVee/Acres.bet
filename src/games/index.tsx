@@ -17,7 +17,7 @@ export const GAMES: GameBundle[] = [
     meta: {
       background: '#ff6490',
       name: 'Dice',
-      image: '/games/dice.png',
+      image: '/games/DICE1.png',
       description: `
         Dice challenges players to predict the outcome of a roll with a unique twist. Select a number and aim to roll below it to win. Adjusting your choice affects potential payouts, balancing risk and reward for an engaging experience.
       `,
@@ -52,7 +52,7 @@ export const GAMES: GameBundle[] = [
     id: 'hilo',
     meta: {
       name: 'HiLo',
-      image: '/games/hilo.png',
+      image: '/games/HILO1.png',
       description: `
         HiLo is a game of foresight and luck, challenging players to guess whether the next card will be higher or lower. Make consecutive correct guesses to increase your winnings, and decide when to cash out for maximum rewards.
       `,
@@ -68,7 +68,7 @@ export const GAMES: GameBundle[] = [
       description: `
         There's money hidden beneath the squares. The reward will increase the more squares you reveal, but watch out for the 5 hidden mines. Touch one and you'll go broke. You can cash out at any time.
       `,
-      image: '/games/mines.png',
+      image: '/games/MINES1.png',
       background: '#8376ff',
     },
     app: React.lazy(() => import('./Mines')),
@@ -89,7 +89,7 @@ export const GAMES: GameBundle[] = [
     id: 'plinko',
     meta: {
       background: '#7272ff',
-      image: '/games/plinko.png',
+      image: '/games/PLINKO1.png',
       name: 'Plinko',
       description: `
         Plinko is played by dropping chips down a pegged board where they randomly fall into slots with varying win amounts. Each drop is a mix of anticipation and strategy, making Plinko an endlessly entertaining game of chance.
@@ -102,7 +102,7 @@ export const GAMES: GameBundle[] = [
     id: 'crash',
     meta: {
       background: '#de95e8',
-      image: '/games/crash.png',
+      image: '/games/CRASH1.png',
       name: 'Crash',
       description: `
       Predict a multiplier target and watch a rocket attempt to reach it. If the rocket crashes before the target, the player loses; if it reaches or exceeds the target, the player wins.
