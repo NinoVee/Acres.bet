@@ -6,7 +6,7 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.ma
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  'EXjZJegm5i4mESkVmPDhcxvdvTrXbFERnPtYrga9jAUf',
+  '9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
@@ -39,8 +39,8 @@ export const POOLS = [
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
-  // Wormhole:
-  lp('9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe'),
+  // ACRES:
+  lp('5ZN19wdWkAbFi6qYGyBARCVjxFzSgewenYj59GSDyq7t'),
 ]
 
 // The default token to be selected
