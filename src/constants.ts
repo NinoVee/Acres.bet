@@ -6,11 +6,11 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.ma
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  'V2grJiwjs25iJYqumbHyKo5MTK7SFqZSdmoRaj8QWb9',
+  'EXjZJegm5i4mESkVmPDhcxvdvTrXbFERnPtYrga9jAUf',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
-export const EXPLORER_URL = 'https://explorer.gamba.so'
+export const EXPLORER_URL = 'https://solscan.io/token/9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe'
 
 // Platform URL - Appears in ShareModal
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
@@ -39,8 +39,8 @@ export const POOLS = [
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
-  // Wormhole:
-  lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
+  // ACRES:
+  lp('9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe'),
 ]
 
 // The default token to be selected
@@ -61,10 +61,10 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     usdPrice: 0,
   },
   {
-    mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
+    mint: new PublicKey('9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe'),
     name: 'W',
-    symbol: 'Wormhole',
-    image: 'https://wormhole.com/token.png',
+    symbol: 'ACRES',
+    image: '/MLK COIN.png',
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
