@@ -10,7 +10,7 @@ export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
 )
 
 // Gamba explorer URL - Appears in RecentPlays
-export const EXPLORER_URL = 'https://solscan.io/account/5ZN19wdWkAbFi6qYGyBARCVjxFzSgewenYj59GSDyq7t'
+export const EXPLORER_URL = 'https://solscan.io/account/'
 
 // Platform URL - Appears in ShareModal
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
@@ -64,7 +64,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     mint: new PublicKey('9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe'),
     name: 'W',
     symbol: 'ACRES',
-    image: '/MLK LOGO.png',
+    image: '/MLK LOGO.JPG',
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
