@@ -6,11 +6,11 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.ma
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  '9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe',
+  'EXjZJegm5i4mESkVmPDhcxvdvTrXbFERnPtYrga9jAUf',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
-export const EXPLORER_URL = 'https://solscan.io/'
+export const EXPLORER_URL = 'https://solscan.io/account/CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C'
 
 // Platform URL - Appears in ShareModal
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
@@ -40,7 +40,7 @@ export const POOLS = [
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
   // ACRES:
-  lp('5ZN19wdWkAbFi6qYGyBARCVjxFzSgewenYj59GSDyq7t'),
+  lp('BPFLoaderUpgradeab1e11111111111111111111111'),
 ]
 
 // The default token to be selected
