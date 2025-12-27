@@ -69,7 +69,16 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     decimals: 6,
     usdPrice: 0,
   },
-]
+  {
+  mint: new PublicKey('So11111111111111111111111111111111111111112'),
+  name: 'Solana',
+  symbol: 'SOL',
+  image: '/sol.png',      // add an icon in your public folder
+  baseWager: 0.01e9,      // example: 0.01 SOL
+  decimals: 9,
+  usdPrice: 0,
+},
+
 
 /** HTML to display to user that they need to accept in order to continue */
 export const TOS_HTML = `
