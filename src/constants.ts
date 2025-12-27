@@ -78,6 +78,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   decimals: 9,
   usdPrice: 0,
 },
+]
 
 
 /** HTML to display to user that they need to accept in order to continue */
