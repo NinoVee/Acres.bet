@@ -73,7 +73,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   mint: new PublicKey('So11111111111111111111111111111111111111112'),
   name: 'Solana',
   symbol: 'SOL',
-  image: '/sol.png',      // add an icon in your public folder
+  image: '/Solana.png',      // add an icon in your public folder
   baseWager: 0.01e9,      // example: 0.01 SOL
   decimals: 9,
   usdPrice: 0,
