@@ -33,8 +33,6 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  * For private pools, add the creator of the Liquidity Pool as a second argument
  */
 export const POOLS = [
-  // Fake token:
-  lp(FAKE_TOKEN_MINT),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
@@ -52,15 +50,6 @@ export const DEFAULT_POOL = POOLS[1]
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
-    mint: FAKE_TOKEN_MINT,
-    name: 'Fake',
-    symbol: 'FAKE',
-    image: '/fakemoney.png',
-    baseWager: 1e9,
-    decimals: 9,
-    usdPrice: 0,
-  },
-  {
     mint: new PublicKey('9hTF4azRpZQFqgZ3YpgACD3aSbbB4NkeEUhp7NKZvmWe'),
     name: 'REPARATIONS',
     symbol: 'ACRES',
@@ -68,6 +57,15 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
+  },
+  {
+    mint: new PublicKey('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
+    name: 'USD Coin',
+    symbol: 'USDC',
+    image: '/usdc.png',   // put usdc.png in /public (or change path)
+    baseWager: 1e6,       // 1 USDC
+    decimals: 6,
+    usdPrice: 1,
   },
   {
   mint: new PublicKey('So11111111111111111111111111111111111111112'),
